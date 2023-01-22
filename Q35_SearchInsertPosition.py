@@ -5,13 +5,11 @@ You must write an algorithm with O(log n) runtime complexity.
 """
 # O(log n)
 def search(nums,target):
-    if target in nums:
-        return nums.index(target)
-    
     left, right = 0, len(nums) - 1
     while left <= right:
         mid = (left + right) // 2
-        
+        if nums[mid] == target:
+            return mid
         if nums[mid] < target:
             left = mid + 1
         else:
