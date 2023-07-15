@@ -47,3 +47,5 @@ nums2 = [2,5,6]
 n = 3
 
 merge(nums1,nums2,m,n)
+print(nums1)
+print(nums2)
